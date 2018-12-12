@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExemploGraficos"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="ExemploGraficos.MainPage"
+             Title="Gráficos">
+
+    <StackLayout>
+
+        
+        <ScrollView  Orientation = "Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout  Padding="10">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="BAR" Font="Bold,15" HorizontalTextAlignment="Center" />
+                    <microcharts:ChartView x:Name="GraficoBar" HeightRequest="300" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="DONUT" Font="Bold,15" HorizontalTextAlignment="Center" />
+                    <microcharts:ChartView x:Name="GraficoDonut" HeightRequest="300" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="LINE" Font="Bold,15" HorizontalTextAlignment="Center" />
+                    <microcharts:ChartView x:Name="GraficoLine" HeightRequest="300" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="PONTOS" Font="Bold,15" HorizontalTextAlignment="Center" />
+                    <microcharts:ChartView x:Name="GraficoPoint" HeightRequest="300" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="GAUGE" Font="Bold,15" HorizontalTextAlignment="Center" />
+                    <microcharts:ChartView x:Name="GraficoGauge" HeightRequest="300" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="PIE" Font="Bold,15" HorizontalTextAlignment="Center" />
+                    <microcharts:ChartView x:Name="GraficoPie" HeightRequest="300" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="RADAR" Font="Bold,15" HorizontalTextAlignment="Center" />
+                    <microcharts:ChartView x:Name="GraficoRadar" HeightRequest="300" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>        
+
+    </StackLayout>
+
+</ContentPage>

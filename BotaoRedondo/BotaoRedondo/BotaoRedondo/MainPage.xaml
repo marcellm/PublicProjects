@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BotaoRedondo"
+             x:Class="BotaoRedondo.MainPage">
+
+    <StackLayout>
+
+        <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <!-- Linha: 0 -->
+                    <RowDefinition />
+                    <!-- Linha: 1 -->
+                    <RowDefinition />
+                    <!-- Linha: 2 -->
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <!-- Coluna: 0 -->
+                    <ColumnDefinition Width="80*" />
+                    <!-- Coluna: 1 -->
+                    <ColumnDefinition Width="20*"  />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout HorizontalOptions="End" Grid.Row="0" Grid.Column="1">
+                    <Button Text="" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand"  BackgroundColor="DodgerBlue" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_edit_pencil.png" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="End" Grid.Row="1" Grid.Column="1">
+                    <Button Text="" WidthRequest="40" HeightRequest="40" HorizontalOptions="EndAndExpand" BackgroundColor="DarkGreen" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_camera.png" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="End" Grid.Row="2" Grid.Column="1">
+                    <Button Text="" WidthRequest="40" HeightRequest="40" HorizontalOptions="EndAndExpand" BackgroundColor="DarkRed" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_calendar.png" />
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>        
+        
+        <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <!-- Linha: 0 -->
+                    <RowDefinition />
+                    <!-- Linha: 1 -->
+                    <RowDefinition />
+                    <!-- Linha: 2 -->
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <!-- Coluna: 0 -->
+                    <ColumnDefinition Width="80*" />
+                    <!-- Coluna: 1 -->
+                    <ColumnDefinition Width="20*"  />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout HorizontalOptions="End" Grid.Row="0" Grid.Column="1">
+                    <Button Text="" WidthRequest="60" HeightRequest="60" HorizontalOptions="StartAndExpand" BackgroundColor="DodgerBlue" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_edit_pencil.png" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="End" Grid.Row="1" Grid.Column="1">
+                    <Button Text="" WidthRequest="60" HeightRequest="60" HorizontalOptions="EndAndExpand" BackgroundColor="DarkGreen" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_camera.png" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="End" Grid.Row="2" Grid.Column="1">
+                    <Button Text="" WidthRequest="60" HeightRequest="60" HorizontalOptions="EndAndExpand" BackgroundColor="DarkRed" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_calendar.png" />
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

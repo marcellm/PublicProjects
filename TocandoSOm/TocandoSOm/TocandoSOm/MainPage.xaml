@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TocandoSOm"
+             x:Class="TocandoSOm.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Padding="10">
+            <Button BackgroundColor="DodgerBlue" TextColor="White" Clicked="tocar_som_clicked" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

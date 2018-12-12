@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BarraProgress"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"
+             x:Class="BarraProgress.MainPage">
+
+  <!-- Layout Stack -->
+  <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">      
+      <ScrollView  Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
+        <!--<ListView x:Name="lvMetas" HasUnevenRows="True">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <StackLayout Padding="10" Orientation="Vertical">
+                  <Label Text="{Binding nome}" FontSize="18" />
+                  <ProgressBar Progress="{Binding percentual}" ProgressColor="{Binding cor}" />
+                </StackLayout>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>-->
+      
+      
+        <!-- Layout Absoluto -->
+        <RelativeLayout BackgroundColor="Transparent">
+          
+          <ListView x:Name="lvMetas" HasUnevenRows="True" 
+            RelativeLayout.WidthConstraint =
+            "{ConstraintExpression Type=RelativeToParent,
+                                   Property=Width,
+                                   Factor=1,
+                                   Constant=0}"
+            RelativeLayout.HeightConstraint =
+            "{ConstraintExpression Type=RelativeToParent,
+                                   Property=Height,
+                                   Factor=1,
+                                   Constant=0}">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <StackLayout Padding="10" Orientation="Vertical">
+                    <Label Text="{Binding nome}" FontSize="18" />
+                    <ProgressBar Progress="{Binding percentual}" ProgressColor="{Binding cor}" />
+                  </StackLayout>
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+
+          <StackLayout Orientation="Vertical"
+            RelativeLayout.XConstraint =
+            "{ConstraintExpression Type=RelativeToParent,
+                                   Property=Width,
+                                   Factor=0.8,
+                                   Constant=0}"
+                  RelativeLayout.YConstraint =
+            "{ConstraintExpression Type=RelativeToParent,
+                                   Property=Height,
+                                   Factor=0.8,
+                                   Constant=0}">
+          
+          <Button Text="" WidthRequest="60" HeightRequest="60" HorizontalOptions="StartAndExpand" BackgroundColor="DodgerBlue" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_edit_pencil.png" />
+          <Button Text="" WidthRequest="60" HeightRequest="60" HorizontalOptions="EndAndExpand" BackgroundColor="DarkGreen" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_camera.png" />
+          <Button Text="" WidthRequest="60" HeightRequest="60" HorizontalOptions="EndAndExpand" BackgroundColor="DarkRed" BorderColor="Transparent" BorderRadius="30" Image="icon_16x16_light_calendar.png" />
+          </StackLayout>
+    
+        </RelativeLayout>      
+      
+      </ScrollView>
+
+
+
+    </StackLayout>
+  </StackLayout>
+
+  
+
+</ContentPage>

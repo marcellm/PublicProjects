@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Lanterna"
+             x:Class="Lanterna.MainPage"
+             BackgroundColor="Black">
+
+    <StackLayout>
+
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>                     
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                    <Image x:Name="imgLanterna" Source="lanternaOff.png" />
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" Padding="5">
+            <Image Source="ads.jpg" />
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>

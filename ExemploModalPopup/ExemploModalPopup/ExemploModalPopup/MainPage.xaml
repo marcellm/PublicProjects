@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExemploModalPopup"
+             x:Class="ExemploModalPopup.MainPage"
+             Title="Exemplo de modal">             
+    <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Button Text="Modal Modelo 1" Clicked="abrir_modal_modelo1_clicked" BackgroundColor="DodgerBlue" TextColor="White" />
+            <Button Text="Modal Modelo 2" Clicked="abrir_modal_modelo2_clicked" BackgroundColor="DodgerBlue" TextColor="White" />
+            <Button Text="Modal Modelo 3" Clicked="abrir_modal_modelo3_clicked" BackgroundColor="DodgerBlue" TextColor="White" />
+            <Button Text="Modal Modelo 4" Clicked="abrir_modal_modelo4_clicked" BackgroundColor="DodgerBlue" TextColor="White" />
+            <Button Text="Modal Modelo 5" Clicked="abrir_modal_modelo5_clicked" BackgroundColor="DodgerBlue" TextColor="White" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
