@@ -19,7 +19,7 @@ namespace ExemploAudio
             player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
 
             //:::::::::::::::::::::::::::::::::::
-            // ::::::::::: INSTRUÇÕES :::::::::::
+            //:::::::::::: INSTRUÇÕES :::::::::::
             //:::::::::::::::::::::::::::::::::::
             // https://blog.xamarin.com/adding-sound-xamarin-forms-app
             // Baixar Plugin: Xam.Plugin.SimpleAudioPlayer
