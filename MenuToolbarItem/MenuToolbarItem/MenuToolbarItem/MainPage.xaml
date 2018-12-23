@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MenuToolbarItem"
+             x:Class="MenuToolbarItem.MainPage"
+             Title="Contas a Receber">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Pesquisar" Order="Primary" Icon="search.png" Text="Pesquisar" Priority="0" Activated="PesquisarClicked" />
+        <ToolbarItem Name="Baixar" Order="Secondary" Text="Baixar" Priority="1" Activated="BaixarClicked" />
+        <ToolbarItem Name="Estornar" Order="Secondary" Text="Estornar" Priority="2" Activated="EstornarClicked" />
+        <ToolbarItem Name="Excluir" Order="Secondary" Text="Excluir" Priority="3" Activated="ExcluirClicked" />
+    </ContentPage.ToolbarItems>
+
+</ContentPage>
